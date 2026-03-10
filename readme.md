@@ -46,7 +46,7 @@ AND e1.emp_id < e2.emp_id;
 ### Output
 
 <p align="center">
-<img src="outputs/2.png" width="430">
+<img src="outputs/3.png" width="430">
 </p>
 
 ---
@@ -64,7 +64,7 @@ LIMIT 1;
 ### Output
 
 <p align="center">
-<img src="outputs/3.png" width="337">
+<img src="outputs/2.png" width="337">
 </p>
 
 ---
