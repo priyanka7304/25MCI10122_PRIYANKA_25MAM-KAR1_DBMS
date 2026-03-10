@@ -33,14 +33,11 @@ INSERT INTO Employees VALUES
 # Q1: Find Employees Working Under the Same Manager
 
 ```sql
-SELECT e1.manager_id,
-       e1.emp_name AS employee_1,
-       e2.emp_name AS employee_2
-FROM Employees e1
-JOIN Employees e2
-ON e1.manager_id = e2.manager_id
-WHERE e1.manager_id IS NOT NULL
-AND e1.emp_id < e2.emp_id;
+select emp1.manager_id,emp1.emp_name as employee_1,emp2.emp_name as employee_2 
+from employees as emp1
+join employees as emp2
+on emp1.manager_id = emp2.manager_id 
+and emp1.emp_name < emp2.emp_name;
 ```
 
 ### Output
